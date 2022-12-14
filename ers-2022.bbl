@@ -1,0 +1,169 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{EU}
+Eurostat,
+  \href{https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=hlth_cd_aro&lang=en}{Causes
+  of death - deaths by country of residence and occurrence} (2020).
+\newline\urlprefix\url{https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=hlth_cd_aro&lang=en}
+
+\bibitem{WHO2018}
+Estimated cancer incidence, mortality and prevalence world-wide in 2018,
+  \url{http://gco.iarc.fr/today/data/factsheets/cancers/10_8_9-Colorectum-fact-sheet.pdf},
+  wHO, World Health Organization -- International Agency for Research on
+  Cancer. (2018).
+
+\bibitem{Hewett2010}
+D.~Hewett, C.~Kahi, D.~Rex, Efficacy and effectiveness of colonoscopy: how do
+  we bridge the gap?, Gastrointest Endosc Clin N Am. 20 (2010) 673--684.
+
+\bibitem{Ramsoekh2010}
+D.~Ramsoekh, J.~Haringsma, J.~W. Poley, P.~van Putten, H.~van Dekken, E.~W.
+  Steyerberg, M.~E. van Leerdam, E.~J. Kuipers, A back-to-backcomparison of
+  white light video endoscopy with autofluorescence endoscopy for adenoma
+  detection in high-risk subjects, Gut 59(3) (2010) 785--793.
+
+\bibitem{Karargyris2010}
+A.~Karargyris, N.~Bourbakis, Wireless capsule endoscopy and endoscopic imaging:
+  a survey on various methodologies presented., IEEE Engineering in Medicine
+  and Biology Magazine 29(1) (2010) 72–83.
+
+\bibitem{szczypinski2017qmazda}
+P.~M. Szczypi{\'n}ski, A.~Klepaczko, M.~Kocio{\l}ek, Qmazda—software tools
+  for image analysis and pattern recognition, in: 2017 Signal Processing:
+  Algorithms, Architectures, Arrangements, and Applications (SPA), IEEE, 2017,
+  pp. 217--221.
+
+\bibitem{Greenspan2016}
+H.~Greenspan, B.~van Ginneken, R.~M. Summers, Guest editorial deep learning in
+  medical imaging: Overview and future promise of an exciting new technique,
+  IEEE Transactions on Medical Imaging 35~(5) (2016) 1153--1159.
+\newblock \href {https://doi.org/10.1109/TMI.2016.2553401}
+  {\path{doi:10.1109/TMI.2016.2553401}}.
+
+\bibitem{Shin2016}
+H.~{Shin}, H.~R. {Roth}, M.~{Gao}, L.~{Lu}, Z.~{Xu}, I.~{Nogues}, J.~{Yao},
+  D.~{Mollura}, R.~M. {Summers}, Deep convolutional neural networks for
+  computer-aided detection: Cnn architectures, dataset characteristics and
+  transfer learning, IEEE Transactions on Medical Imaging 35~(5) (2016)
+  1285--1298.
+\newblock \href {https://doi.org/10.1109/TMI.2016.2528162}
+  {\path{doi:10.1109/TMI.2016.2528162}}.
+
+\bibitem{Sing2020}
+SING, \href{https://github.com/sing-group/deep-learning-colonoscopy}{Deep
+  learning for polyp detection and classification in colonoscopy} (2020).
+\newline\urlprefix\url{https://github.com/sing-group/deep-learning-colonoscopy}
+
+\bibitem{Dinov2016}
+I.~D. Dinov, Methodological challenges and analytic opportunities for modeling
+  and interpreting big healthcare data, Gigascience 5 (2016) 12.
+\newblock \href {https://doi.org/10.1186/s13742-016-0117-6}
+  {\path{doi:10.1186/s13742-016-0117-6}}.
+
+\bibitem{MST}
+O.~M.~E. Digestive, Minimal standard terminology for gastrointestinal
+  endoscopy,
+  \url{www.worldendo.org/assets/downloads/pdf/resources/mst/mst30.pdf}.
+
+\bibitem{Litjens2017}
+G.~Litjens, T.~Kooi, B.~E. Bejnordi, A.~A.~A. Setio, F.~Ciompi, M.~Ghafoorian,
+  J.~A. Van Der~Laak, B.~Van~Ginneken, C.~I. S{\'a}nchez, A survey on deep
+  learning in medical image analysis, Medical image analysis 42 (2017) 60--88.
+
+\bibitem{atlas1}
+{Julio Murra-Saca MD}, \href{gastrointestinalatlas.com}{El salvador atlas}
+  (2020).
+\newline\urlprefix\url{gastrointestinalatlas.com}
+
+\bibitem{atlas3}
+{UNED, US National Endoscopic Database}, \href{gastrolab.net}{Gastrolab - the
+  gastrointestinal image site} (2019).
+\newline\urlprefix\url{gastrolab.net}
+
+\bibitem{Mayo}
+N.~Tajbakhsh, S.~R. Gurudu, J.~Liang, Automated polyp detection in colonoscopy
+  videos using shape and context information, IEEE Transactions on Medical
+  Imaging 35~(2) (2016) 630--644.
+\newblock \href {https://doi.org/10.1109/TMI.2015.2487997}
+  {\path{doi:10.1109/TMI.2015.2487997}}.
+
+\bibitem{ETIS}
+J.~Silva, A.~Histace, O.~Romain, X.~Dray, B.~Granado,
+  \href{https://doi.org/10.1007/s11548-013-0926-3}{Toward embedded detection of
+  polyps in wce images for early diagnosis of colorectal cancer}, International
+  journal of computer assisted radiology and surgery 9~(2) (2014) 283—293.
+\newblock \href {https://doi.org/10.1007/s11548-013-0926-3}
+  {\path{doi:10.1007/s11548-013-0926-3}}.
+\newline\urlprefix\url{https://doi.org/10.1007/s11548-013-0926-3}
+
+\bibitem{bernal2012}
+J.~Bernal, J.~S{\'a}nchez, F.~Vilarino, Towards automatic polyp detection with
+  a polyp appearance model, Pattern Recognition 45~(9) (2012) 3166--3182.
+
+\bibitem{Vazquez17}
+D.~V{\'a}zquez, J.~Bernal, F.~J. S{\'a}nchez, G.~Fern{\'a}ndez-Esparrach, A.~M.
+  L{\'o}pez, A.~Romero, M.~Drozdzal, A.~Courville,
+  \href{https://arxiv.org/abs/1612.00799}{A benchmark for endoluminal scene
+  segmentation of colonoscopy images}, in: Journal of Healthcare Engineering,
+  2017.
+\newline\urlprefix\url{https://arxiv.org/abs/1612.00799}
+
+\bibitem{cvc3}
+J.~Bernal, H.~Aymeric, \href{https://endovissub2017-
+  giana.grand-challenge.org/home/}{Miccai endoscopic vision challenge polyp
+  detection and segmentation} (2017).
+\newline\urlprefix\url{https://endovissub2017- giana.grand-challenge.org/home/}
+
+\bibitem{kvasir}
+K.~Pogorelov, K.~R. Randel, C.~Griwodz, S.~L. Eskeland, T.~de~Lange,
+  D.~Johansen, C.~Spampinato, D.-T. Dang-Nguyen, M.~Lux, P.~T. Schmidt, et~al.,
+  Kvasir: A multi-class image dataset for computer aided gastrointestinal
+  disease detection, in: Proceedings of the 8th ACM on Multimedia Systems
+  Conference, 2017, pp. 164--169.
+
+\bibitem{kid}
+A.~Koulaouzidis, D.~K. Iakovidis, D.~E. Yung, E.~Rondonotti, U.~Kopylov, J.~N.
+  Plevris, E.~Toth, A.~Eliakim, G.~W. Johansson, W.~Marlicz, et~al., Kid
+  project: an internet-based digital video atlas of capsule endoscopy for
+  research purposes, Endoscopy international open 5~(06) (2017) E477--E483.
+
+\bibitem{wang2017}
+P.~Wang, X.~Xiao, J.~Liu, L.~Li, M.~Tu, J.~He, X.~Hu, F.~Xiong, Y.~Xin, X.~Liu,
+  A prospective validation of deep learning for polyp auto-detection during
+  colonoscopy: 2017 international award: 205, American Journal of
+  Gastroenterology 112 (2017) S106--S110.
+
+\bibitem{Blokus2012}
+A.~Blokus, A.~Brzeski, J.~Cychnerski, T.~Dziubich, M.~J{\k{e}}drzejewski,
+  Real-time gastrointestinal tract video analysis on a cluster supercomputer,
+  in: 7th International Conference on Dependability and Complex Systems
+  (DepCoS-RELCOMEX), 2012, pp. 55--68.
+
+\bibitem{Krawczyk2012}
+H.~Krawczyk, P.~Czarnul, T.~Dziubich, Evaluation of multimedia applications in
+  a cluster oriented environment, Metrology and Measurement Systems 2 (2012)
+  177--190.
+
+\bibitem{Szegedy_2016_CVPR}
+C.~Szegedy, V.~Vanhoucke, S.~Ioffe, J.~Shlens, Z.~Wojna, Rethinking the
+  inception architecture for computer vision, in: The IEEE Conference on
+  Computer Vision and Pattern Recognition (CVPR), 2016.
+
+\bibitem{Zoph2017}
+B.~Zoph, V.~Vasudevan, J.~Shlens, Q.~V. Le, Learning transferable architectures
+  for scalable image recognition, in: Proceedings of the IEEE conference on
+  computer vision and pattern recognition, 2018, pp. 8697--8710.
+
+\bibitem{howard2017mobilenets}
+A.~G. Howard, M.~Zhu, B.~Chen, D.~Kalenichenko, W.~Wang, T.~Weyand,
+  M.~Andreetto, H.~Adam, \href{http://arxiv.org/abs/1704.04861}{Mobilenets:
+  Efficient convolutional neural networks for mobile vision applications}, cite
+  arxiv:1704.04861 (2017).
+\newline\urlprefix\url{http://arxiv.org/abs/1704.04861}
+
+\end{thebibliography}
