@@ -147,9 +147,10 @@ One of the problems occurring in the process of creating automated classifiers b
 
 Existing web resources are relatively poor. Mostly, they contain dozen of images, usually with one pathology or photos of healthy organs and act as medical atlases. We can give as examples: El Salvador Gastroenterology Atlas with 5086 endoscopic videos \cite{atlas1} and  Gastrolab - US National Endoscopic Database - 1498 images \cite{atlas3}. It is worth noting that many older atlases have disappeared (e.g. the Atlas of Gastrointestinal Endoscopy - Atlanta South Gastroenterology, US and the Atlas of Gastrointerological Endoscopy Departments of Internal Medicine of Finsterwalde Hospital and Aschersleben Hospital, Germany).
 
-
 Specialized challenges are another more valuable source of endoscopic images and videos (i.e. MICCAI incl. Giana, Kaggle) which provide benchmark data sets that come with expert ground truth contours and standard evaluation measures to assess automated segmentation performance. 
-In MICCAI 2015 challenge which covers a polyp segmentation in both colonoscopy images (SD and HD) and the tasks related to WCE image classification, ASU-Mayo data set was used. It is the first, largest, and a constantly growing set of short and long colonoscopy videos, collected and annotated at the Department of Gastroenterology at Mayo Clinic in Arizona. Currently this data set consists of 38 different, pixel-wise annotated videos (20 in training, 18 in testing set). Each image in this database comes with a ground truth image or a binary mask that indicates the polyp region. 20 short training colonoscopy videos of which 10 videos have a unique polyp inside and the other 10 videos have no polyps, HD (1920x1080) and SD (856x480, 712 x 480)  resolutions. Data set consists of 18996 images and a total of 4278 polyp instances, testing set -  17575 in total and 4313 with polyps \cite{Mayo}.
+In MICCAI 2015 challenge which covers a polyp segmentation in both colonoscopy images (SD and HD) and the tasks related to WCE image classification, ASU-Mayo data set was used. It is the first, largest, and a constantly growing set of short and long colonoscopy videos, collected and annotated at the Department of Gastroenterology at Mayo Clinic in Arizona. Currently this data set consists of 38 different, pixel-wise annotated videos (20 in training, 18 in testing set). Each image in this database comes with a ground truth image or a binary mask that indicates the polyp region. 20 short training colonoscopy videos of which 10 videos have a unique polyp inside and the other 10 videos have no polyps, HD (1920x1080) and SD (856x480, 712 x 480)  resolutions. Data set consists of 18996 images and a total of 4278 polyp instances, testing set -  17575 in total and 4313 with polyps \cite{Mayo}. 
+In Endoscopy Disease Detection challenge 2020\cite{EDD2020} which covers both segmentation and detection of endoscopy diseases authors have proposed a novel dataset, namely EDD2020. The dataset consists of five classes for both detection and segmentation tasks - nondysplastic Barret's, suspicious precancerous lesion, high-grade dysplasia, cancer and polyp. The data were collected from Ambroise PareHospital of Boulogne-Billancourt, Paris, France; Centro Riferimento Oncologico IRCCS, Aviano, Italy; Istituto Oncologico Veneto, Padova, Italy and John
+Radcliffe Hospital, Oxford, UK. Training dataset is available upon registration and consists of 386 images. Each image from the training set comes with a mask which indicates the disease area.
 
 The ETIS-LARIB (ENSEA/CNRS/University of Cergy-Pontoise) data set contains 196 polyp images with a resolution of 1225x966 pixels in HD \cite{ETIS}. All images were extracted from 34 different colonoscopy videos which contain 44 unique polyps. The total number of polyps is 208. These data sets do not contain any “healthy” (normal) images and are usually used for testing.
 
@@ -160,6 +161,12 @@ In \cite{cvc3} we could find a new data set, namely CVC--Clinic2017 (or CVC--12k
 Kvasir is the largest data set in gastroscopy and consists of images, annotated and verified by medical doctors (experienced endoscopists), including several classes showing anatomical landmarks (Z-line, pylorus, cecum), pathological findings (esophagitis, ulcerative colitis, polyps) or endoscopic procedures in the GI tract; contains 8,000 images divided into 8 classes, 1,000 images for each class. In addition, authors provide several sets of images related to removal of lesions, e.g. `dyed and lifted polyp', `dyed resection margins', etc. The data set consist of the images with different resolution from 720x576 up to 1920x1072 pixels and organized in a way where they are sorted in separate folders named accordingly to the content. Some of the included classes of images have a green picture in picture illustrating the position and configuration of the endoscope inside the bowel, by use of an electromagnetic imaging system (ScopeGuide, Olympus Europe) that may support the interpretation of the image. This type of information may be important for further investigations (thus included), but must be handled with care for the detection of the endoscopic findings \cite{kvasir}. 
 
 The next data set is called KiD and is divided into two sets: KiD1 and KiD2. It is an open academic access database of high quality annotated WCE video and images. (resolution of images 360x360 pixels). The first data set (KiD1) consists of a total of 77 images obtained using MiroCam® (IntroMedic Co, Seoul, Korea) capsule endoscopes. These images illustrate various types of abnormalities, including angioectasias, aphthae, chylous cysts, polypoid lesions, villous oedema, bleeding, lymphangiectasia, ulcers and stenoses. The second one (KiD2) comprise of 2371 WCE images. These images illustrate assorted small bowel findings including polypoid, vascular and, inflammatory lesions. This data set also includes normal images from the esophagus, stomach, small bowel and colon. Beside of this, there are three video data sets but they do not include annotations yet. Abnormalities depicted within this data set include 303 vascular (small bowel angiectasias and blood in the lumen), 44 polypoid (lymphoid nodular hyperplasia, lymphoma, Peutz–Jeghers polyps) and 227 inflammatory (ulcers, aphthae, mucosal breaks with surrounding erythema, cobblestone mucosa, luminal stenoses and/or fibrotic strictures, and mucosal/villous oedema) lesion images and 1778 normal images obtained from the esophagus, the stomach, the small bowel, and the colon \cite{kid}.
+
+BKAI-IGH NeoPolyp is a new segmentation dataset released by the collaboration of Hanoi University of Science and Technology and Insitute of Gastroenterology and Hepatology(IGH) from Vietnam in \cite{NeoPolyp}. The dataset consists of 1200 images and is divided into training(1000 images) and test set(200 images). The annotations were added and verified by two endoscopists from IGH. All polyps in the dataset are classified into neoplastic or non-neoplastic classes. Each image from the training dataset comes with a ground truth image of the polyp region. Images in both training and test datasets are of various resolutions ranging from 1280x959 to 1280x1024.
+
+Another dataset called SUN-SEG which were introduced in \cite{SUN-SEG} as an extension of original SUN database includes 49136 polyp frames taken from 100 different polyps and 109554 frames which do not contain any polyps. The initial database was provided by Showa University and Nagoya University. All the frames were taken from 113 colonoscopy videos from which 100 were positive and 13 were negative. Authors of this dataset have extended the original SUN detection datasaet with variety of labels to allow its usage for segmentation tasks. The segmentation masks were initially made by 10 experienced annotators. Then, three colonoscopy researchers have re-verified and corrected these annotations. 
+
+The next dataset called Polyp-Box-Seg\cite{Polyp-Box-Seg} consists of 4070 colonoscopy images with popyls from over 2000 patients. All of the images were annotated with bounding boxes over the polyps regions and 1300 randomly chosen were additionally annotated with segmentation masks. All the 4070 polyp images were hand-selected from colonoscopy screening videos so that each image contains an unique polyp. Originally all images in the dataset were having a resolution of 460x640, but then were resized to 384x384 resolution. The classes available in the dataset include but are not limited to: Tabular abdomena, Hyperplastic, Sessile serrated adenoma nad non-serrated setssile.
 
 All mentioned above data sets are available to the public either after registration or sending an inquiry.
 
@@ -298,6 +305,26 @@ the position and configuration of the endoscope inside the bowel. &
 1350
 \\
 \hline
+NeoPolyp &
+colono-scopy&
+N/A/ N/A &
+1200 from 1280x959 to 1280x1024 &
+neoplastic, non-neoplastic &
+graphical, pixel-wise annotations &
+0
+\\
+\hline
+SUN-SEG &
+colono-scopy&
+13/ 99 &
+158690 &
+\longcell 
+hyperplastic polyp, sessile serrated lesion, low grade adenoma, traditional serrated adenoma, high grade adenoma, invasive carcinoma&
+neoplastic, non-neoplastic &
+attribute, object mask, boundary, sribble, polygon
+109554
+\\
+\hline
 
 \end{longtable}
 
@@ -308,7 +335,7 @@ the position and configuration of the endoscope inside the bowel. &
 
 
 
-As it was shown in Tab. \ref{tbl1} most of data sets are addressed to one morbid entity or clinical findings, most often related to colonoscopy. The number of patients from whom the study comes is very low (up to several dozen). Images (and annotations) illustrate the same or very similar shoot of the disease, often from adjacent images. Most data sets do not provide pixel-wise annotations and the images are marked only with labels. This results in a rapid decrease in the suitability of them to semantic segmentation issues. Succeeding general problem is that several of the existing data sets are cumbersome to use in terms of permission are restricted. 
+As it was shown in Tab. \ref{tbl1} most of data sets are addressed to one morbid entity or clinical findings, most often related to colonoscopy. The number of patients from whom the study comes is very low (usually up to several dozen). Images (and annotations) illustrate the same or very similar shoot of the disease, often from adjacent images. Most data sets do not provide pixel-wise annotations and the images are marked only with labels. This results in a rapid decrease in the suitability of them to semantic segmentation issues. Succeeding general problem is that several of the existing data sets are cumbersome to use in terms of permission are restricted. 
 
  The clean and complete data is one of the crucial parts of a good segmentation/object detection system. This means that spending the time to create a high-quality data set is very important and is directly connected to the quality. These motivations drove us to creating a new large and complete data set called ERS (Endoscopy Recommendation System).
 
